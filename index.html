@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .video-card {
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-card video {
+            transition: all 0.4s ease;
+        }
+
+        .video-card:hover video {
+            transform: scale(1.02);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(187, 185, 185, 0.367);">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+                <span class="fw-bold"> YouTube</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="d-flex align-items-center justify-content-center w-100 gap-3 mt-3 mt-lg-0" role="search">
+
+                    <!-- Search Bar -->
+                    <div class="input-group" style="max-width: 600px;">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                            style="border-radius: 25px 0 0 25px;">
+
+                        <button class="btn" type="submit" style="border-radius: 0 25px 25px 0; background-color:rgb(156, 156, 156)">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Microphone -->
+                    <button type="button" class="rounded-circle" style="background-color:rgb(156, 156, 156)">
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+
+                    <!-- Create -->
+                    <button type="button" class=" rounded-pill px-3" style="background-color:rgb(156, 156, 156)">
+                        <i class="fa-solid fa-plus"></i>
+                        Create
+                    </button>
+
+                    <!-- Notification -->
+                    <button type="button" class=" rounded-circle" style="background-color:rgb(156, 156, 156)">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- < <div>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+        </div>
+    </div>> -->
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/1_temp.png">
+                        <source src="./recording/1_temprecture.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Temperature Program in C</h5>
+                        <p class="card-text text-tertiary">Temperature: “Learn to convert temperature between Celsius
+                            and Fahrenheit in C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/2 salary.png">
+                        <source src="./recording/1_Grosssalary.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Gross Salary</h5>
+                        <p class="card-text text-tertiary">Gross Salary: “Learn to calculate gross salary using basic
+                            salary, HRA, DA, and TA in C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/3_tiangle.png">
+                        <source src="./recording/1_Trangle.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Triangle</h5>
+                        <p class="card-text text-tertiary">Triangle: “Learn to calculate the third angle of a triangle
+                            using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/4_taranary.png">
+                        <source src="./recording/2taranary.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Taranary Operater ? :</h5>
+                        <p class="card-text text-tertiary">Ternary Operator: “Learn how to assign grades using the
+                            ternary operator in C.</p>
+                    </div>
+                </div>
+            </div>
+
+
+           <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/5_switchcase.png">
+                        <source src="./recording/2switch.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Switch Case</h5>
+                        <p class="card-text text-tertiary">Switch Case: “Learn how to use switch-case to check grades
+                            and display messages in C.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/6_if else.png">
+                        <source src="./recording/2ifelse.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">If Else Statement</h5>
+                        <p class="card-text text-tertiary">If-Else Statement: “Learn how to use if-else statements to
+                            calculate grades and check eligibility in C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="./Image/7_skipalpha.png">
+                        <source src="./recording/3skip alpha.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Skip 3 Alphabets </h5>
+                        <p class="card-text text-tertiary">Learn how to skip 3 alphabets in a string using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="recording/3countnum.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Count the Digits</h5>
+                        <p class="card-text text-tertiary">Learn how to count the total number of digits in a number using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="./recording/3_sumfirt to last.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Count First & Last Digits</h5>
+                        <p class="card-text text-tertiary">.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="./recording/ptn1.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Pattern 1</h5>
+                        <p class="card-text text-tertiary">Learn how to create Pattern  using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="./recording/ptn2.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Pattern 2</h5>
+                        <p class="card-text text-tertiary">Learn how to create Pattern  using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="./recording/ptn3.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Pattern 3</h5>
+                        <p class="card-text text-tertiary">Learn how to create Pattern  using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="./recording/ptn4.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Pattern 4</h5>
+                        <p class="card-text text-tertiary">Learn how to create Pattern  using C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+               <div class="card border-0 video-card w-100">
+                    <video class="card-img-top rounded-4" controls poster="">
+                        <source src="./recording/ptn5.webm" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Pattern 5</h5>
+                        <p class="card-text text-tertiary">Learn how to create Pattern  using C.</p>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        </div>
+    </div>
+</body>
+
+</html>
